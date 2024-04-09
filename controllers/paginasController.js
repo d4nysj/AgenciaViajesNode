@@ -37,7 +37,7 @@ const paginaViajes = async (req,res)=>{
     //consultar base de datos primero 
 
     const viajes = await Viaje.findAll() 
-    res.render('Viajes', {
+    res.render('viajes', {
         pagina:'Próximos viajes',
         viajes
     })
