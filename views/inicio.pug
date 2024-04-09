@@ -1,0 +1,30 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de janeiro
+        em aventura y diversión
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consep
+                p  ut ame etiam velit euismod inimicus quo. Qui tibi
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class ='img-fluid')
+        include ./layout/bloque_viajes
+    .descuento
+        .container
+            .row
+                .col-md6
+                    .contenido
+                        h3 0% de descuento
+                        p.titulo Viaje a canada
+                        p.fecha 20 marzo
+                        p.precio 9999999999€
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
